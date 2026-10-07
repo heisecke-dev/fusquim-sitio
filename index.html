@@ -1,0 +1,652 @@
+<!doctype html>
+<html lang="es-PY" class="is-loading">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>FUSQUIM S.A. — Industria farmacéutica y alimenticia · Luque, Paraguay</title>
+    <meta
+      name="description"
+      content="FUSQUIM S.A., empresa del Grupo Heisecke: planta industrial en Luque, Paraguay. Sólidos, líquidos, semisólidos y edulcorantes Hecodulc y Dulzero bajo GMP e ISO 9001:2015."
+    />
+    <meta name="theme-color" content="#0b7bc3" />
+    <meta name="color-scheme" content="light" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="FUSQUIM S.A. — Tecnología, calidad y capacidad industrial" />
+    <meta property="og:description" content="Planta industrial farmacéutica y alimenticia en Luque, Paraguay." />
+    <meta property="og:locale" content="es_PY" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="icon" type="image/png" sizes="64x64" href="./favicon.png" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+    <script type="module" crossorigin src="./assets/index-Bplu64La.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/i18n-CzbLsmRW.js">
+    <link rel="stylesheet" crossorigin href="./assets/index-Dfm_UtMY.css">
+  </head>
+  <body aria-busy="true">
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <!-- ============ PRELOADER ============ -->
+    <div class="preloader" id="preloader">
+      <div class="preloader__grid" aria-hidden="true"></div>
+      <div class="preloader__core">
+        <img class="preloader__logo" src="./assets/fusquim-logo-white-t74XKmdS.svg" width="300" height="51" alt="FUSQUIM S.A." fetchpriority="high" />
+        <div class="spinner" aria-hidden="true">
+          <svg class="spinner__ring spinner__ring--outer" viewBox="0 0 120 120" focusable="false">
+            <circle class="spinner__track" cx="60" cy="60" r="56" />
+            <circle class="spinner__arc" cx="60" cy="60" r="56" pathLength="100" />
+          </svg>
+          <svg class="spinner__ring spinner__ring--inner" viewBox="0 0 120 120" focusable="false">
+            <circle class="spinner__arc spinner__arc--inner" cx="60" cy="60" r="42" pathLength="100" />
+          </svg>
+        </div>
+        <p class="preloader__label" id="preloader-label">
+          Sintetizando componentes<span class="preloader__dots" aria-hidden="true"></span>
+        </p>
+        <div class="preloader__meter" role="progressbar" aria-labelledby="preloader-label" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+          <span class="preloader__bar"></span>
+        </div>
+        <div class="preloader__readout" aria-hidden="true">
+          <span data-preloader-step>Inicializando motor gráfico</span>
+          <span class="preloader__count"><span data-preloader-count>000</span>%</span>
+        </div>
+      </div>
+    </div>
+    <p class="visually-hidden" role="status" data-preloader-status></p>
+
+    <!-- ============ ESCENA 3D (decorativa): proceso Dulzero o planta FUSQUIM ============ -->
+    <div class="stage-backdrop" aria-hidden="true"></div>
+    <div class="dock" data-dock data-only="dulzero" aria-hidden="true">
+      <svg class="dock__ring" viewBox="0 0 128 184" preserveAspectRatio="none" focusable="false"><rect x="1.5" y="1.5" width="125" height="181" rx="21" pathLength="100" /></svg>
+      <p class="dock__caption"><span data-dock-step>Armado</span><span class="dock__pct" data-dock-pct>0%</span></p>
+    </div>
+    <canvas class="stage" id="stage" aria-hidden="true" tabindex="-1"></canvas>
+    <div class="stage-vignette" aria-hidden="true"></div>
+    
+
+    <!-- ============ NAVEGACIÓN (con menús desplegables) ============ -->
+    <header class="nav" data-nav inert>
+      <a class="nav__brand" href="#inicio">
+        <img class="nav__logo" src="./assets/fusquim-logo-B_QR3fUX.svg" width="300" height="51" alt="FUSQUIM S.A., volver al inicio" />
+      </a>
+      <nav class="nav__menu" id="nav-menu" aria-label="Principal">
+        <ul class="nav__list">
+          
+
+          <li class="nav__item" data-mega>
+            <a href="#nosotros">La compañía</a>
+            <div class="mega">
+              <div class="mega__main">
+                <div class="mega__intro">
+                  <p class="mega__title">La compañía</p>
+                  <img class="mega__img" src="./assets/equipo-planta-960-CdYzJRVH.webp" width="960" height="640" loading="lazy" decoding="async" alt="" />
+                  <p class="mega__text">FUSQUIM concentra la actividad industrial del Grupo Heisecke con dos plantas en Luque, Paraguay.</p>
+                  <a class="mega__more" href="#nosotros">Leer</a>
+                </div>
+                <ul class="mega__col">
+                  <li><a class="mega__head" href="#nosotros">Quiénes somos</a></li>
+                  <li><a href="#mision">Misión y visión</a></li>
+                  <li><a href="#cifras">FUSQUIM en cifras</a></li>
+                  <li><a class="mega__head" href="#vision">Nuestra visión</a></li>
+                </ul>
+                <ul class="mega__col">
+                  <li><a class="mega__head" href="#servicios">Servicios</a></li>
+                  <li><a href="#servicios">Acondicionamiento / Maquila</a></li>
+                  <li><a href="#servicios">Control de calidad físico-químico y microbiológico</a></li>
+                  <li><a href="#servicios">Desarrollo analítico y estabilidad</a></li>
+                  <li><a href="#servicios">Desarrollo galénico</a></li>
+                </ul>
+                <ul class="mega__col">
+                  <li><a class="mega__head" href="#expansion">Nueva planta de sólidos orales</a></li>
+                  <li><a class="mega__head" href="#historia">Nuestra historia</a></li>
+                </ul>
+              </div>
+              <ul class="mega__feat">
+                <li><a href="#personas"><img src="./assets/equipo-planta-960-CdYzJRVH.webp" width="960" height="640" loading="lazy" decoding="async" alt="" /><span>El Grupo Heisecke, certificado como Great Place to Work® 2025–2026.</span></a></li>
+                <li><a href="#expansion"><img src="./assets/planta-3-960-CfClo_2W.webp" width="960" height="640" loading="lazy" decoding="async" alt="" /><span>Nueva planta de sólidos orales: 117 millones de unidades por año.</span></a></li>
+                <li><a href="#servicios"><img src="./assets/microbiologia-960--420e4xy.webp" width="960" height="640" loading="lazy" decoding="async" alt="" /><span>Control de calidad físico-químico y microbiológico</span></a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="nav__item" data-mega>
+            <a href="#productos">Productos</a>
+            <div class="mega">
+              <div class="mega__main">
+                <div class="mega__intro">
+                  <p class="mega__title">Productos</p>
+                  <img class="mega__img" src="./assets/laboratorio-toc-960-BoexMSbC.webp" width="960" height="640" loading="lazy" decoding="async" alt="" />
+                  <p class="mega__text">Especialidades farmacéuticas y alimenticias para las marcas del grupo y para laboratorios nacionales e internacionales.</p>
+                  <a class="mega__more" href="#productos">Leer</a>
+                </div>
+                <ul class="mega__col">
+                  <li><a class="mega__head" href="#especialidades">Especialidades farmacéuticas</a></li>
+                  <li><a href="#especialidades">Cápsulas</a></li>
+                  <li><a href="#especialidades">Comprimidos</a></li>
+                  <li><a href="#especialidades">Líquidos</a></li>
+                  <li><a href="#especialidades">Semisólidos</a></li>
+                </ul>
+                <ul class="mega__col">
+                  <li><a class="mega__head" href="#edulcorantes">Edulcorantes</a></li>
+                  <li><a class="mega__head" href="#servicios">Acondicionamiento / Maquila</a></li>
+                </ul>
+              </div>
+              <ul class="mega__feat mega__feat--products">
+                <li><a href="#especialidades"><img src="./assets/fingrip-D9HaSQZH.webp" width="640" height="640" loading="lazy" decoding="async" alt="" /><span>Fingrip DN <small>Antigripal día + noche</small></span></a></li>
+                <li><a href="#especialidades"><img src="./assets/omezol-up_GsIDQ.webp" width="640" height="640" loading="lazy" decoding="async" alt="" /><span>Omezol <small>Omeprazol 20 mg</small></span></a></li>
+                <li><a href="#especialidades"><img src="./assets/sintos-MqhYmGGC.webp" width="640" height="640" loading="lazy" decoding="async" alt="" /><span>Sintos <small>Hedera helix · solución oral</small></span></a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="nav__item" data-mega>
+            <a href="#calidad">Calidad</a>
+            <div class="mega">
+              <div class="mega__main">
+                <div class="mega__intro">
+                  <p class="mega__title">Calidad</p>
+                  <img class="mega__img" src="./assets/microbiologia-960--420e4xy.webp" width="960" height="640" loading="lazy" decoding="async" alt="" />
+                  <p class="mega__text">Certificación GMP de la Dirección Nacional de Vigilancia Sanitaria e ISO 9001:2015.</p>
+                  <a class="mega__more" href="#calidad">Leer</a>
+                </div>
+                <ul class="mega__col">
+                  <li><a class="mega__head" href="#calidad">Sistema de calidad</a></li>
+                  <li><a href="#calidad">Garantía</a></li>
+                  <li><a href="#calidad">Control</a></li>
+                  <li><a href="#calidad">Desarrollo</a></li>
+                  <li><a href="#calidad">Estabilidad</a></li>
+                </ul>
+                <ul class="mega__col">
+                  <li><a class="mega__head" href="#calidad">Certificaciones</a></li>
+                  <li><a href="#calidad">GMP · DINAVISA</a></li>
+                  <li><a href="#calidad">ISO 9001:2015</a></li>
+                </ul>
+                <ul class="mega__col">
+                  <li><a class="mega__head" href="#servicios">Control de calidad físico-químico y microbiológico</a></li>
+                  <li><a class="mega__head" href="#servicios">Desarrollo analítico y estabilidad</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li class="nav__item" data-mega>
+            <a href="#grupo">Grupo Heisecke</a>
+            <div class="mega">
+              <div class="mega__main">
+                <div class="mega__intro">
+                  <p class="mega__title">Grupo Heisecke</p>
+                  <img class="mega__img mega__img--logo" src="./assets/heisecke-logo-CJEPI9Ub.png" loading="lazy" decoding="async" alt="" />
+                  <p class="mega__text">Nace el Grupo Heisecke como empresa familiar del rubro farmacéutico.</p>
+                  <a class="mega__more" href="#grupo">Leer</a>
+                </div>
+                <ul class="mega__col">
+                  <li><a class="mega__head" href="#grupo">Empresas del grupo</a></li>
+                  <li><a href="#grupo">FUSQUIM S.A.</a></li>
+                  <li><a href="#grupo">Heisecke &amp; Cía. S.A.C.I.</a></li>
+                  <li><a href="#grupo">Bellcos S.A.</a></li>
+                </ul>
+                <ul class="mega__col">
+                  <li><a class="mega__head" href="#historia">Nuestra historia</a></li>
+                  <li><a href="#historia">1932</a></li>
+                  <li><a href="#historia">1979</a></li>
+                  <li><a href="#historia">2013</a></li>
+                </ul>
+                <ul class="mega__col">
+                  <li><a class="mega__head" href="#personas">Personas</a></li>
+                  <li><a href="#personas">Great Place to Work® · 2025–2026</a></li>
+                  <li><a class="mega__head mega__ext" href="https://grupoheisecke.com.py/" target="_blank" rel="noopener">grupoheisecke.com.py</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+
+          <li class="nav__cta-mobile"><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="langpick" data-langpick>
+        <button class="langpick__btn" type="button" aria-expanded="false" aria-controls="lang-menu" data-langpick-btn>
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><circle cx="8" cy="8" r="6.5" /><path d="M1.5 8h13M8 1.5c1.9 2 2.8 4.1 2.8 6.5S9.9 12.5 8 14.5M8 1.5C6.1 3.5 5.2 5.6 5.2 8s.9 4.5 2.8 6.5" /></svg>
+          <span data-langpick-code data-no-i18n>ES</span>
+          <span class="visually-hidden">Cambiar de idioma</span>
+        </button>
+        <div class="langpick__menu" id="lang-menu">
+          <p class="langpick__title">Cambiar de idioma</p>
+          <div class="lang" role="group" aria-label="Idioma" data-no-i18n>
+            <a href="?lang=es" hreflang="es" lang="es" data-lang="es">Español</a>
+            <a href="?lang=en" hreflang="en" lang="en" data-lang="en">English</a>
+            <a href="?lang=pt" hreflang="pt" lang="pt" data-lang="pt">Português</a>
+          </div>
+        </div>
+      </div>
+      <a class="btn btn--ghost btn--small nav__cta" href="#contacto">Contacto</a>
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-menu" data-nav-toggle>
+        <span class="visually-hidden">Abrir menú</span>
+        <span class="nav__burger" aria-hidden="true"></span>
+      </button>
+    </header>
+
+    <main id="contenido" tabindex="-1" inert>
+      <!-- ============ HERO ============ -->
+      <section class="hero" id="inicio" aria-labelledby="hero-title">
+        <div class="hero__copy">
+          <div class="hero__head">
+            <p class="label" data-hero-fade>Ingeniería química de vanguardia · Luque, Paraguay</p>
+            <h1 class="hero__title" id="hero-title" data-hero-title>
+              Tecnología, calidad y <em>capacidad industrial.</em>
+            </h1>
+          </div>
+          <div class="hero__body">
+          <p class="hero__lede" data-hero-lede>
+            Fabricamos medicamentos y edulcorantes para el Paraguay y la región en una planta
+            certificada GMP e ISO 9001:2015.
+          </p>
+          <div class="hero__ctas" data-hero-fade>
+            
+            <a class="btn btn--primary" href="#productos" data-only="dulzero">Nuestros productos</a>
+            <a class="btn btn--ghost" href="#contacto">Hablemos</a>
+          </div>
+          </div>
+        </div>
+        <div class="hero__stage" data-hero-stage data-only="dulzero" aria-hidden="true"></div>
+
+        
+      </section>
+
+      <!-- ============ LA PLANTA, PIEZA POR PIEZA ============ -->
+      
+
+      <!-- ============ PRODUCTOS ============ -->
+      <section class="section products" id="productos" aria-labelledby="products-title">
+        <header class="section__head">
+          <p class="label" data-reveal>Hecho en FUSQUIM</p>
+          <h2 class="section__title" id="products-title" data-split-lines>
+            De nuestras líneas <em>a cada hogar.</em>
+          </h2>
+        </header>
+
+        <div class="products__group" id="especialidades" data-rail>
+          <div class="rail__head">
+            <div class="rail__intro" data-reveal>
+              <h3 class="rail__name">Especialidades farmacéuticas</h3>
+              <p>Línea Heisecke: comprimidos, cápsulas, soluciones orales y semisólidos.</p>
+            </div>
+            <div class="rail__nav">
+              <button class="rail__btn" type="button" data-rail-prev aria-label="Especialidades anteriores"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M15 5l-7 7 7 7" /></svg></button>
+              <button class="rail__btn" type="button" data-rail-next aria-label="Especialidades siguientes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M9 5l7 7-7 7" /></svg></button>
+            </div>
+          </div>
+          <ul class="rail__track" role="list" tabindex="0" aria-label="Especialidades farmacéuticas" data-rail-track>
+            <li class="product"><div class="product__media"><img src="./assets/omezol-up_GsIDQ.webp" width="640" height="640" loading="lazy" decoding="async" alt="Caja de Omezol, omeprazol 20 mg" /></div><div class="product__body"><p class="product__brand">Cápsulas</p><h4 class="product__name">Omezol</h4><p class="product__meta">Omeprazol 20 mg</p></div></li>
+            <li class="product"><div class="product__media"><img src="./assets/fingrip-D9HaSQZH.webp" width="640" height="640" loading="lazy" decoding="async" alt="Caja de Fingrip DN, antigripal día y noche" /></div><div class="product__body"><p class="product__brand">Comprimidos</p><h4 class="product__name">Fingrip DN</h4><p class="product__meta">Antigripal día + noche</p></div></li>
+            <li class="product"><div class="product__media"><img src="./assets/sintos-MqhYmGGC.webp" width="640" height="640" loading="lazy" decoding="async" alt="Caja y frasco de Sintos, Hedera helix" /></div><div class="product__body"><p class="product__brand">Líquidos</p><h4 class="product__name">Sintos</h4><p class="product__meta">Hedera helix · solución oral</p></div></li>
+            <li class="product"><div class="product__media"><img src="./assets/heclovir-CaVfdn9j.webp" width="640" height="640" loading="lazy" decoding="async" alt="Caja de Heclovir 800, aciclovir 800 mg" /></div><div class="product__body"><p class="product__brand">Comprimidos</p><h4 class="product__name">Heclovir 800</h4><p class="product__meta">Aciclovir 800 mg</p></div></li>
+            <li class="product"><div class="product__media"><img src="./assets/hecovit-complex-khQSQVzN.webp" width="640" height="640" loading="lazy" decoding="async" alt="Caja y frasco de Hecovit Complex" /></div><div class="product__body"><p class="product__brand">Suplemento</p><h4 class="product__name">Hecovit Complex</h4><p class="product__meta">Multivitamínico</p></div></li>
+            <li class="product"><div class="product__media"><img src="./assets/hecoval-uIUHcQ3I.webp" width="640" height="640" loading="lazy" decoding="async" alt="Caja y pomo de Hecoval" /></div><div class="product__body"><p class="product__brand">Semisólidos</p><h4 class="product__name">Hecoval</h4><p class="product__meta">Pomo 25 g</p></div></li>
+            <li class="product"><div class="product__media"><img src="./assets/tricor-BCIAzMOa.webp" width="640" height="640" loading="lazy" decoding="async" alt="Caja de Tricor 500, tinidazol 500 mg" /></div><div class="product__body"><p class="product__brand">Comprimidos</p><h4 class="product__name">Tricor 500</h4><p class="product__meta">Tinidazol 500 mg</p></div></li>
+            <li class="product"><div class="product__media"><img src="./assets/nasul-BOPe6iBD.webp" width="640" height="640" loading="lazy" decoding="async" alt="Caja de Nasul, tamsulosina 0,4 mg" /></div><div class="product__body"><p class="product__brand">Comprimidos</p><h4 class="product__name">Nasul</h4><p class="product__meta">Tamsulosina 0,4 mg</p></div></li>
+            <li class="product"><div class="product__media"><img src="./assets/uroprost-forte-D26pEYOk.webp" width="640" height="640" loading="lazy" decoding="async" alt="Caja de Uroprost Forte, beta-sitosterol 20 mg" /></div><div class="product__body"><p class="product__brand">Comprimidos</p><h4 class="product__name">Uroprost Forte</h4><p class="product__meta">β-sitosterol 20 mg</p></div></li>
+            <li class="product"><div class="product__media"><img src="./assets/vagizol-DjppF1Dt.webp" width="640" height="640" loading="lazy" decoding="async" alt="Caja de Vagizol, tinidazol y nitrato de miconazol" /></div><div class="product__body"><p class="product__brand">Semisólidos</p><h4 class="product__name">Vagizol</h4><p class="product__meta">Tinidazol · miconazol</p></div></li>
+          </ul>
+        </div>
+
+        <div class="products__group" id="edulcorantes" data-rail>
+          <div class="rail__head">
+            <div class="rail__intro" data-reveal>
+              <h3 class="rail__name">Edulcorantes Hecodulc y Dulzero</h3>
+              <p>
+                Hecodulc, el primer edulcorante del Paraguay (1979), y Dulzero se elaboran en nuestra
+                planta: líquidos y en polvo, con Stevia, sucralosa y fórmulas clásicas.
+              </p>
+            </div>
+            <div class="rail__nav">
+              <button class="rail__btn" type="button" data-rail-prev aria-label="Edulcorantes anteriores"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M15 5l-7 7 7 7" /></svg></button>
+              <button class="rail__btn" type="button" data-rail-next aria-label="Edulcorantes siguientes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M9 5l7 7-7 7" /></svg></button>
+            </div>
+          </div>
+          <ul class="rail__track" role="list" tabindex="0" aria-label="Edulcorantes" data-rail-track>
+            <li class="product"><div class="product__media"><img src="./assets/hecodulc-tradicional-npfquzDJ.webp" width="640" height="640" loading="lazy" decoding="async" alt="Caja de Hecodulc Tradicional, 100 sobres" /></div><div class="product__body"><p class="product__brand">Hecodulc</p><h4 class="product__name">Tradicional</h4><p class="product__meta">Polvo · 100 sobres</p></div></li>
+            <li class="product"><div class="product__media"><img src="./assets/hecodulc-stevia-yh6E4RrO.webp" width="640" height="640" loading="lazy" decoding="async" alt="Caja de Hecodulc Ka’a He’ê con Stevia, 100 sobres" /></div><div class="product__body"><p class="product__brand">Hecodulc</p><h4 class="product__name">Ka’a He’ê</h4><p class="product__meta">Stevia en polvo · 100 sobres</p></div></li>
+            <li class="product"><div class="product__media"><img src="./assets/hecodulc-stevia-100-J5UEAH-R.webp" width="640" height="640" loading="lazy" decoding="async" alt="Tres frascos de Hecodulc Stevia 100 %" /></div><div class="product__body"><p class="product__brand">Hecodulc</p><h4 class="product__name">Stevia 100&nbsp;%</h4><p class="product__meta">Líquido · 3 presentaciones</p></div></li>
+            <li class="product"><div class="product__media"><img src="./assets/hecodulc-stevia-sucralosa-tQw3_TO8.webp" width="640" height="640" loading="lazy" decoding="async" alt="Frasco de Hecodulc Stevia más Sucralosa" /></div><div class="product__body"><p class="product__brand">Hecodulc</p><h4 class="product__name">Stevia + Sucralosa</h4><p class="product__meta">Edulcorante líquido</p></div></li>
+            <li class="product"><div class="product__media"><img src="./assets/hecodulc-sucralosa-BF4qLpky.webp" width="640" height="640" loading="lazy" decoding="async" alt="Frasco de Hecodulc Sucralosa" /></div><div class="product__body"><p class="product__brand">Hecodulc</p><h4 class="product__name">Sucralosa</h4><p class="product__meta">Edulcorante líquido</p></div></li>
+            <li class="product"><div class="product__media"><img src="./assets/hecodulc-vainilla-DJ56oHAu.webp" width="640" height="640" loading="lazy" decoding="async" alt="Frasco de Hecodulc Sucralosa aroma vainilla" /></div><div class="product__body"><p class="product__brand">Hecodulc</p><h4 class="product__name">Aroma Vainilla</h4><p class="product__meta">Sucralosa · líquido</p></div></li>
+            <li class="product"><div class="product__media"><img src="./assets/dulzero-clasico-DQkSFUao.webp" width="640" height="640" loading="lazy" decoding="async" alt="Frasco de Dulzero Clásico" /></div><div class="product__body"><p class="product__brand">Dulzero</p><h4 class="product__name">Clásico</h4><p class="product__meta">Edulcorante líquido</p></div></li>
+            <li class="product"><div class="product__media"><img src="./assets/dulzero-stevia-B2WhICSr.webp" width="640" height="640" loading="lazy" decoding="async" alt="Frasco de Dulzero Stevia" /></div><div class="product__body"><p class="product__brand">Dulzero</p><h4 class="product__name">Stevia</h4><p class="product__meta">Edulcorante líquido</p></div></li>
+            <li class="product"><div class="product__media"><img src="./assets/dulzero-sucralosa-BeJ0qVAy.webp" width="640" height="640" loading="lazy" decoding="async" alt="Frasco de Dulzero Sucralosa" /></div><div class="product__body"><p class="product__brand">Dulzero</p><h4 class="product__name">Sucralosa</h4><p class="product__meta">Edulcorante líquido</p></div></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ============ NOSOTROS (editorial con fotos reales) ============ -->
+      <section class="section about" id="nosotros" aria-labelledby="about-title">
+        <div class="about__text">
+          <p class="label" data-reveal>Somos FUSQUIM</p>
+          <h2 class="section__title" id="about-title" data-split-lines>
+            Preparada para <em>mercados exigentes.</em>
+          </h2>
+          <p class="section__lede" data-reveal>
+            FUSQUIM S.A. nació en el rubro farmacéutico y se expandió gracias al espíritu visionario
+            de sus continuadores. Concentra la actividad industrial del Grupo Heisecke con sus dos
+            plantas, que se destacan en los mercados farmacéutico y alimenticio.
+          </p>
+          <p data-reveal>
+            La planta industrial está en Luque, a unos 20 km del centro de Asunción y cerca del
+            Aeropuerto Internacional, rodeada de áreas verdes. Su equipo de profesionales, en
+            constante formación, se caracteriza por su alto grado de responsabilidad y compromiso con
+            la calidad.
+          </p>
+          <div class="about__mission" id="mision" data-reveal>
+            <p class="label">Misión</p>
+            <p>
+              Brindamos servicios de elaboración de productos farmacéuticos y alimenticios a todos
+              aquellos laboratorios nacionales e internacionales interesados en mejorar su nivel de
+              producción y sus costos generales. Contamos con nivel tecnológico de primera línea y
+              procesos productivos adecuados a cumplir con las Buenas Prácticas de Manufactura (GMP)
+              de la mano de un responsable y calificado equipo humano, a la vez que velamos por el
+              medio ambiente y la comunidad.
+            </p>
+          </div>
+        </div>
+        <div class="about__collage">
+          <figure class="about__photo about__photo--main" data-reveal>
+            <picture>
+              <source type="image/avif" srcset="./assets/equipo-planta-960-p3blHNa_.avif 960w, ./assets/equipo-planta-1600-DQ9eS6xX.avif 1600w" sizes="(width < 900px) 94vw, 50vw" />
+              <img src="./assets/equipo-planta-960-CdYzJRVH.webp" srcset="./assets/equipo-planta-960-CdYzJRVH.webp 960w, ./assets/equipo-planta-1600-DXlLFkY5.webp 1600w" sizes="(width < 900px) 94vw, 50vw" width="960" height="640" loading="lazy" decoding="async" alt="El equipo de FUSQUIM frente a la planta industrial de Luque" data-parallax />
+            </picture>
+            <figcaption>El equipo FUSQUIM en la planta de Luque.</figcaption>
+          </figure>
+          <figure class="about__photo about__photo--a" data-reveal>
+            <picture>
+              <source type="image/avif" srcset="./assets/laboratorio-toc-960-CqB8IFGo.avif 960w" sizes="(width < 900px) 46vw, 24vw" />
+              <img src="./assets/laboratorio-toc-960-BoexMSbC.webp" width="960" height="640" loading="lazy" decoding="async" alt="Analista cargando muestras en un analizador TOC del laboratorio de control de calidad" />
+            </picture>
+          </figure>
+          <figure class="about__photo about__photo--b" data-reveal>
+            <picture>
+              <source type="image/avif" srcset="./assets/planta-3-960-B8qS7BzC.avif 960w" sizes="(width < 900px) 46vw, 24vw" />
+              <img src="./assets/planta-3-960-CfClo_2W.webp" width="960" height="640" loading="lazy" decoding="async" alt="Técnico de laboratorio trasvasando una solución azul" />
+            </picture>
+          </figure>
+        </div>
+      </section>
+
+      <!-- ============ CIFRAS (banda azul FUSQUIM) ============ -->
+      <section class="band band--plain" id="cifras" aria-labelledby="figures-title">
+        <div class="section section--band">
+          <h2 class="visually-hidden" id="figures-title">FUSQUIM en cifras</h2>
+          <ul class="figures" role="list">
+            <li class="figure" data-reveal><p class="figure__value"><span data-counter="2">2</span></p><p class="figure__label">plantas productivas</p></li>
+            <li class="figure" data-reveal><p class="figure__value"><span data-counter="20">20</span><small>km</small></p><p class="figure__label">del centro de Asunción</p></li>
+            <li class="figure" data-reveal><p class="figure__value"><small>US$</small>+<span data-counter="4">4</span><small>M</small></p><p class="figure__label">de inversión en renovación</p></li>
+            <li class="figure" data-reveal><p class="figure__value"><span data-counter="16">16</span></p><p class="figure__label">líneas de acondicionamiento</p></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ============ SERVICIOS ============ -->
+      <section class="section" id="servicios" aria-labelledby="services-title">
+        <div class="services">
+          <header class="services__head">
+            <p class="label" data-reveal>Servicios</p>
+            <h2 class="section__title" id="services-title" data-split-lines>
+              Capacidad productiva, <em>analítica y de desarrollo.</em>
+            </h2>
+            <figure class="services__photo" data-reveal>
+              <picture>
+                <source type="image/avif" srcset="./assets/microbiologia-960-CF99txXr.avif 960w" sizes="(width < 900px) 94vw, 40vw" />
+                <img src="./assets/microbiologia-960--420e4xy.webp" width="960" height="640" loading="lazy" decoding="async" alt="Análisis microbiológico con mechero y placa de Petri" />
+              </picture>
+            </figure>
+          </header>
+          <div class="services__list">
+            <details class="service" open>
+              <summary><span class="service__index" aria-hidden="true">01</span><h3 class="service__title">Acondicionamiento / Maquila</h3><span class="service__icon" aria-hidden="true"></span></summary>
+              <div class="service__body">
+                <p>Elaboramos productos farmacéuticos y alimenticios para laboratorios nacionales e internacionales que buscan mejorar su nivel de producción y sus costos generales.</p>
+                <p>16 líneas de acondicionamiento automáticas y manuales: estuchado, etiquetado, codificado y empaque/embalado.</p>
+              </div>
+            </details>
+            <details class="service">
+              <summary><span class="service__index" aria-hidden="true">02</span><h3 class="service__title">Control de calidad físico-químico y microbiológico</h3><span class="service__icon" aria-hidden="true"></span></summary>
+              <div class="service__body">
+                <p>Especialidades farmacéuticas no estériles, higiene personal, cosméticos, perfumes y productos naturales.</p>
+                <p>Materias primas, producto terminado de cualquier forma farmacéutica, fitoterápicos y cosméticos, y análisis del agua de uso propio.</p>
+              </div>
+            </details>
+            <details class="service">
+              <summary><span class="service__index" aria-hidden="true">03</span><h3 class="service__title">Desarrollo analítico y estabilidad</h3><span class="service__icon" aria-hidden="true"></span></summary>
+              <div class="service__body">
+                <p>Estudios de estabilidad ICH a temperatura y humedad controladas para la zona climática IVb (30 °C/75 % HR y 40 °C/75 % HR), estabilidad en uso y on-going.</p>
+                <p>Validaciones analíticas según farmacopeas internacionales, de productos no compendiales, de limpieza y de proceso.</p>
+              </div>
+            </details>
+            <details class="service">
+              <summary><span class="service__index" aria-hidden="true">04</span><h3 class="service__title">Desarrollo galénico</h3><span class="service__icon" aria-hidden="true"></span></summary>
+              <div class="service__body">
+                <p>Sector segregado y personal calificado para formular productos farmacéuticos y de grado alimenticio según las especificaciones del cliente, con estudios de estabilidad de larga duración.</p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ CALIDAD ============ -->
+      <section class="section quality" id="calidad" aria-labelledby="quality-title">
+        <header class="section__head">
+          <p class="label" data-reveal>Sistema de calidad</p>
+          <h2 class="section__title" id="quality-title" data-split-lines>
+            Calidad en <em>cada etapa del proceso.</em>
+          </h2>
+          <p class="section__lede" data-reveal>
+            Certificación de Buenas Prácticas de Manufactura (GMP) expedida por la Dirección Nacional
+            de Vigilancia Sanitaria e ISO 9001:2015.
+          </p>
+        </header>
+        <ul class="pillars" role="list">
+          <li class="pillar" data-reveal><h3>Garantía</h3><p>Aseguramiento de calidad, liderazgo y mejora continua.</p></li>
+          <li class="pillar" data-reveal><h3>Control</h3><p>Materias primas, proceso, acondicionamiento y producto terminado.</p></li>
+          <li class="pillar" data-reveal><h3>Desarrollo</h3><p>Formulaciones, técnicas analíticas y soporte a nuevos productos.</p></li>
+          <li class="pillar" data-reveal><h3>Estabilidad</h3><p>ICH, estabilidad en uso y on-going.</p></li>
+        </ul>
+        <ul class="certs" role="list" data-reveal>
+          <li><strong>GMP</strong><span>DINAVISA</span></li>
+          <li><strong>ISO 9001:2015</strong><span>Gestión de calidad</span></li>
+          <li><strong>USP · BP</strong><span>Farmacopeas</span></li>
+          <li><strong>ICH · Zona IVb</strong><span>Estabilidad</span></li>
+        </ul>
+      </section>
+
+      <!-- ============ GRUPO HEISECKE ============ -->
+      <section class="section group" id="grupo" aria-labelledby="group-title">
+        <header class="section__head">
+          <p class="label" data-reveal>Grupo Heisecke</p>
+          <h2 class="section__title" id="group-title" data-split-lines>Juntos somos <em>mejores.</em></h2>
+          <p class="section__lede" data-reveal>
+            FUSQUIM es la fuerza industrial del Grupo Heisecke, una empresa familiar nacida en 1932 en
+            el rubro farmacéutico que hoy integra industria, distribución y belleza en Paraguay y Bolivia.
+          </p>
+        </header>
+
+        <div class="group__lockup" data-reveal>
+          <img src="./assets/fusquim-logo-B_QR3fUX.svg" width="300" height="51" loading="lazy" alt="FUSQUIM S.A." />
+          <span class="group__join" aria-hidden="true"></span>
+          <img src="./assets/heisecke-logo-CJEPI9Ub.png" width="1200" height="330" loading="lazy" alt="Grupo Heisecke" />
+        </div>
+
+        <ul class="holding" role="list">
+          <li class="holding__item holding__item--self" data-reveal><p class="holding__kind">Industria</p><h3>FUSQUIM S.A.</h3><p>Dos plantas que elaboran especialidades farmacéuticas y alimenticias para las marcas del grupo y para laboratorios nacionales e internacionales.</p></li>
+          <li class="holding__item" data-reveal><p class="holding__kind">Distribución</p><h3>Heisecke &amp; Cía. S.A.C.I.</h3><p>Distribución, importación y comercialización de productos farmacéuticos y nutricionales con marcas propias líderes, como Hecodulc y Dulzero.</p></li>
+          <li class="holding__item" data-reveal><p class="holding__kind">Belleza</p><h3>Bellcos S.A.</h3><p>Importación y comercialización de belleza y dermocosmética de marcas internacionales, en Paraguay y Bolivia.</p></li>
+        </ul>
+
+        <div class="timeline" id="historia">
+          <div class="timeline__intro">
+            <p class="label" data-reveal>Trayectoria</p>
+            <h3 class="timeline__title" data-reveal>Una historia que se fabrica en Paraguay.</h3>
+          </div>
+          <ol class="timeline__list" data-timeline>
+            <li class="timeline__item" data-reveal><span class="timeline__mark">1932</span><p>Nace el Grupo Heisecke como empresa familiar del rubro farmacéutico.</p></li>
+            <li class="timeline__item" data-reveal><span class="timeline__mark">1979</span><p>Hecodulc se convierte en el primer edulcorante del Paraguay.</p></li>
+            <li class="timeline__item" data-reveal><span class="timeline__mark">2013</span><p>Nace FUSQUIM S.A. y concentra la actividad industrial del grupo.</p></li>
+            <li class="timeline__item" data-reveal><span class="timeline__mark">US$ 4M+</span><p>Renovación integral de la planta de Luque, rodeada de áreas verdes.</p></li>
+            <li class="timeline__item" data-reveal><span class="timeline__mark">GMP · ISO</span><p>Certificación GMP de la Dirección Nacional de Vigilancia Sanitaria e ISO 9001:2015.</p></li>
+            <li class="timeline__item" data-reveal><span class="timeline__mark">2025–26</span><p>El Grupo Heisecke es certificado como Great Place to Work®.</p></li>
+            <li class="timeline__item timeline__item--next" data-reveal><span class="timeline__mark">Próximo</span><p>Nueva planta de sólidos orales: 117 millones de unidades por año.</p></li>
+          </ol>
+        </div>
+
+        <div class="people" id="personas" data-reveal>
+          <div>
+            <p class="people__badge">Great Place to Work® · 2025–2026</p>
+            <h3 class="people__title">Un gran lugar para trabajar también es un gran lugar para producir.</h3>
+          </div>
+          <ul class="people__stats" role="list">
+            <li><strong><span data-counter="322">322</span></strong><span>colaboradores en el Grupo Heisecke</span></li>
+            <li><strong><span data-counter="91">91</span>%</strong><span>afirma que es un excelente lugar para trabajar</span></li>
+            <li><strong><span data-counter="93">93</span>%</strong><span>siente orgullo de trabajar aquí</span></li>
+            <li><strong><span data-counter="91">91</span>%</strong><span>recibe un trato justo sin importar su puesto</span></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ============ EXPANSIÓN ============ -->
+      <section class="section" id="expansion" aria-labelledby="exp-title">
+        <div class="expansion" data-reveal>
+          <div>
+            <p class="label">Expansión · Grupo Heisecke</p>
+            <h2 class="expansion__title" id="exp-title">Nueva planta de <em>sólidos orales.</em></h2>
+            <p>Comprimidos, comprimidos recubiertos, cápsulas duras, polvos y suspensiones extemporáneas, escalable a dos o tres turnos.</p>
+          </div>
+          <p class="expansion__figure"><strong><span data-counter="117">117</span>M</strong><span>unidades por año de capacidad instalada en un turno</span></p>
+        </div>
+      </section>
+
+      <!-- ============ VISIÓN ============ -->
+      <section class="section vision" id="vision" aria-labelledby="vision-title">
+        <p class="label" data-reveal>Nuestra visión</p>
+        <h2 class="vision__quote" id="vision-title" data-split-lines>Mejorar la <em>calidad de vida.</em></h2>
+        <p class="vision__text" data-reveal>
+          Es nuestra vocación establecer relaciones orientadas al largo plazo con nuestros proveedores
+          y socios estratégicos para mantener un crecimiento orgánico fuerte y de beneficio mutuo.
+        </p>
+      </section>
+
+      <!-- ============ DESTACADOS ============ -->
+      <section class="section highlights" aria-labelledby="highlights-title">
+        <header class="highlights__head">
+          <p class="label" data-reveal>Destacados</p>
+          <h2 class="section__title" id="highlights-title" data-split-lines>Lo último de <em>FUSQUIM.</em></h2>
+        </header>
+        <ul class="highlights__list" role="list">
+          <li class="card" data-reveal>
+            <a class="card__link" href="#grupo">
+              <div class="card__media"><img src="./assets/equipo-planta-960-CdYzJRVH.webp" width="960" height="640" loading="lazy" decoding="async" alt="El equipo de FUSQUIM frente a la planta de Luque" /></div>
+              <p class="card__tag">Personas</p>
+              <h3 class="card__title">El Grupo Heisecke, certificado como Great Place to Work® 2025–2026.</h3>
+              <span class="card__arrow" aria-hidden="true"></span>
+            </a>
+          </li>
+          <li class="card" data-reveal>
+            <a class="card__link" href="#grupo">
+              <div class="card__media"><img src="./assets/planta-3-960-CfClo_2W.webp" width="960" height="640" loading="lazy" decoding="async" alt="Técnico de laboratorio trasvasando una solución" /></div>
+              <p class="card__tag">Expansión</p>
+              <h3 class="card__title">Nueva planta de sólidos orales: 117 millones de unidades por año.</h3>
+              <span class="card__arrow" aria-hidden="true"></span>
+            </a>
+          </li>
+          <li class="card" data-reveal>
+            <a class="card__link" href="#servicios">
+              <div class="card__media"><img src="./assets/microbiologia-960--420e4xy.webp" width="960" height="640" loading="lazy" decoding="async" alt="Análisis microbiológico con mechero y placa de Petri" /></div>
+              <p class="card__tag">Servicios</p>
+              <h3 class="card__title">Acondicionamiento y maquila para laboratorios nacionales e internacionales.</h3>
+              <span class="card__arrow" aria-hidden="true"></span>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <!-- ============ CONTACTO ============ -->
+      <section class="band band--brand" id="contacto" aria-labelledby="contact-title">
+        <div class="section contact">
+          <div class="contact__info">
+            <p class="label" data-reveal>Comunicate con nosotros</p>
+            <h2 class="section__title" id="contact-title" data-split-lines>Hablemos.</h2>
+            <div class="contact__places">
+              <address data-reveal><strong>Planta industrial · Luque</strong>Capitán Valois Rivarola y Senador Livio Modesto Flecha<br />Luque, Paraguay<br /><a href="tel:+59521642957">+595 21 642 957</a> · <a href="tel:+59521647970">+595 21 647 970</a></address>
+              <address data-reveal><strong>Consultas comerciales</strong><a href="mailto:infofusquim@hcgrupo.com">infofusquim@hcgrupo.com</a></address>
+            </div>
+          </div>
+          <form class="form" data-contact-form novalidate>
+            <div class="field"><label for="f-name">Nombre</label><input id="f-name" name="nombre" type="text" autocomplete="name" required /></div>
+            <div class="field"><label for="f-email">Correo</label><input id="f-email" name="correo" type="email" autocomplete="email" required /></div>
+            <div class="field"><label for="f-company">Empresa <span class="field__opt">(opcional)</span></label><input id="f-company" name="empresa" type="text" autocomplete="organization" /></div>
+            <div class="field">
+              <label for="f-subject">Asunto</label>
+              <select id="f-subject" name="asunto" required>
+                <option value="comercial">Consulta comercial</option>
+                <option value="maquila">Maquila / servicios industriales</option>
+                <option value="proveedores">Proveedores</option>
+                <option value="rrhh">Trabajá con nosotros</option>
+                <option value="otro">Otro</option>
+              </select>
+            </div>
+            <div class="field field--full"><label for="f-message">Mensaje</label><textarea id="f-message" name="mensaje" rows="5" required></textarea></div>
+            <div class="form__footer field--full"><button class="btn btn--primary" type="submit">Enviar mensaje</button><p class="form__status" role="status" data-form-status></p></div>
+          </form>
+          <figure class="contact__map" data-reveal>
+            <iframe src="https://maps.google.com/maps?q=-25.26397,-57.50241&amp;z=16&amp;hl=es&amp;output=embed" title="Ubicación de la planta FUSQUIM en Luque" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+            <figcaption><a href="https://www.google.com/maps/dir/?api=1&amp;destination=-25.26397,-57.50241" target="_blank" rel="noopener">Cómo llegar<span class="visually-hidden"> (abre en una pestaña nueva)</span></a></figcaption>
+          </figure>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" inert>
+      <div class="footer__top">
+        <div class="footer__brand">
+          <img class="footer__mark" src="./assets/fusquim-logo-white-t74XKmdS.svg" width="3010" height="512" loading="lazy" alt="FUSQUIM S.A." />
+          <p>Planta industrial farmacéutica y alimenticia del Grupo Heisecke, en Luque, Paraguay.</p>
+        </div>
+        <nav class="footer__nav" aria-label="Mapa del sitio">
+          <div>
+            <p class="footer__heading">Empresa</p>
+            <ul role="list">
+              <li><a href="#nosotros">Nosotros</a></li>
+              <li><a href="#servicios">Servicios</a></li>
+              <li><a href="#calidad">Calidad</a></li>
+            </ul>
+          </div>
+          <div>
+            <p class="footer__heading">Productos</p>
+            <ul role="list">
+              <li><a href="#especialidades">Especialidades farmacéuticas</a></li>
+              <li><a href="#edulcorantes">Edulcorantes</a></li>
+            </ul>
+          </div>
+          <div>
+            <p class="footer__heading">Grupo Heisecke</p>
+            <ul role="list">
+              <li><a href="#grupo">Juntos somos mejores</a></li>
+              <li><a href="https://grupoheisecke.com.py/" target="_blank" rel="noopener">grupoheisecke.com.py<span class="visually-hidden"> (abre en una pestaña nueva)</span></a></li>
+            </ul>
+          </div>
+          <div>
+            <p class="footer__heading">Contacto</p>
+            <ul role="list">
+              <li><a href="tel:+59521642957">+595 21 642 957</a></li>
+              <li><a href="mailto:infofusquim@hcgrupo.com">infofusquim@hcgrupo.com</a></li>
+              <li><a href="#contacto">Cómo llegar</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="footer__row">
+        <p>© <span data-year>2026</span> FUSQUIM S.A. · Planta industrial farmacéutica · Luque, Paraguay</p>
+        <p class="footer__group"><span>Una empresa del</span> <a href="https://grupoheisecke.com.py/" target="_blank" rel="noopener"><img src="./assets/heisecke-logo-white-Db-aaIZM.png" width="600" height="165" loading="lazy" alt="Grupo Heisecke" /><span class="visually-hidden"> (abre en una pestaña nueva)</span></a></p>
+      </div>
+      <ul class="footer__social" role="list" aria-label="Redes del Grupo Heisecke">
+        <li><a href="https://www.linkedin.com/company/grupo-heisecke/" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.75h4v11H3v-11Zm6.5 0h3.8v1.5h.06c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.77 2.65 4.77 6.1v5.45h-4v-4.83c0-1.15-.02-2.63-1.6-2.63-1.6 0-1.85 1.25-1.85 2.55v4.91h-4v-11Z"/></svg>LinkedIn<span class="visually-hidden"> (abre en una pestaña nueva)</span></a></li>
+        <li><a href="https://www.facebook.com/grupoheisecke" target="_blank" rel="noopener"><svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M13.5 21v-7.5h2.53l.38-2.94H13.5V8.69c0-.85.24-1.43 1.45-1.43h1.56V4.63A20.6 20.6 0 0 0 14.24 4.5c-2.24 0-3.78 1.37-3.78 3.89v2.17H7.93v2.94h2.53V21h3.04Z"/></svg>Facebook<span class="visually-hidden"> (abre en una pestaña nueva)</span></a></li>
+      </ul>
+      
+    </footer>
+  </body>
+</html>
